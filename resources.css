@@ -1,0 +1,112 @@
+/* --- Styles for resources.html --- */
+
+.resources-main {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.resources-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.resources-header .tagline {
+    display: inline-block;
+    background-color: #EDE4FF;
+    color: var(--primary-purple);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.resources-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-purple);
+}
+
+.resources-header p {
+    font-size: 1.3rem;
+    color: var(--light-text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.helpline-section {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.helpline-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--red-panic);
+    padding-bottom: 2rem;
+}
+
+.helpline-header i {
+    font-size: 2rem;
+}
+
+.helpline-header h3 {
+    font-size: 1.8rem;
+    color: var(--dark-text);
+    margin: 0;
+}
+
+/* --- Style overrides for the .action-grid --- */
+
+/* Make a 2-column grid */
+.resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (min-width: 768px) {
+    .resources-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Styles for the new helpline cards */
+.helpline-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* Make the card match the pinkish border from the image */
+    border: 1px solid #ffe4ec;
+}
+
+.helpline-card:hover {
+    border-color: var(--primary-pink);
+    box-shadow: 0 8px 20px rgba(199, 21, 133, 0.1);
+}
+
+.helpline-card h3 {
+    font-size: 1.4rem;
+    color: var(--dark-text);
+    margin: 0 0 0.25rem 0;
+}
+
+.helpline-card p {
+    font-size: 1rem;
+    color: var(--light-text);
+    margin: 0;
+    flex-grow: 1;
+}
+
+.helpline-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--red-panic);
+    margin-top: 1rem;
+    text-align: right;
+}
