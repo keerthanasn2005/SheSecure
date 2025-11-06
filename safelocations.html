@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHE-SECURE - Safe Locations</title>
+    <!-- Link to the original stylesheet for header, footer, and base styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to the new stylesheet for this specific page -->
+    <link rel="stylesheet" href="safelocations.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">SHE-SECURE</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="safelocations.html" class="active">Safe Locations</a></li>
+                    <li><a href="index.html#support-chat">Support Chat</a></li>
+                    <li><a href="index.html#survivor-stories">Survivor Stories</a></li>
+                    <li><a href="index.html#resources">Resources</a></li>
+                </ul>
+                <a href="index.html#emergency" class="btn-emergency">Emergency</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="safe-location-main">
+        <div class="container">
+            <section class="location-header">
+                <h2>Safe Locations Near You</h2>
+                <p>Nearby stations, hospitals, and support centers in Shimoga</p>
+                <div class="filter-buttons">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Police</button>
+                    <button class="filter-btn">Hospitals</button>
+                    <button class="filter-btn">NGOs</button>
+                    <button class="filter-btn">Shelter</button>
+                </div>
+            </section>
+
+            <section class="map-section">
+                <!-- UPDATED: This is now a container for the dynamic map -->
+                <div id="map-container">
+                    <p>Loading map...</p>
+                </div>
+            </section>
+
+            <section class="location-list">
+                <!-- This now uses the "box" layout with Shimoga locations -->
+                <div class="location-grid">
+                    <!-- Location Card 1: Shimoga Women Police Station -->
+                    <div class="location-card">
+                        <h3>Women Police Station, Shimoga</h3>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Tilak Nagar, Shivamogga, Karnataka 577201</p>
+                        <p class="phone"><i class="fas fa-phone"></i> 08182-227310</p>
+                        <div class="card-tags">
+                            <span>Police</span>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Women+Police+Station+Shimoga" class="btn-directions" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                    </div>
+                    
+                    <!-- Location Card 2: McGann District Hospital -->
+                    <div class="location-card">
+                        <h3>McGann District Hospital (SIMS)</h3>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Sagar Road, Opp to SP Office, Shivamogga, Karnataka 577201</p>
+                        <p class="phone"><i class="fas fa-phone"></i> 08182-271566</p>
+                        <div class="card-tags">
+                            <span>Hospital</span>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=McGann+District+Hospital+Shimoga" class="btn-directions" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                    </div>
+                    
+                    <!-- Location Card 3: Sakhi One Stop Centre -->
+                    <div class="location-card">
+                        <h3>Sakhi One Stop Centre, Shimoga</h3>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> McGann Hospital Campus, Shivamogga, Karnataka 577201</p>
+                        <p class="phone"><i class="fas fa-phone"></i> 181 / 08182-295514</p>
+                        <div class="card-tags">
+                            <span>NGO</span>
+                            <span>Shelter</span>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Sakhi+One+Stop+Centre+Shimoga" class="btn-directions" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                    </div>
+                    
+                    <!-- Location Card 4: Doddapete Police Station -->
+                    <div class="location-card">
+                        <h3>Doddapete Police Station</h3>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Doddapet, Shivamogga, Karnataka 577202</p>
+                        <p class="phone"><i class="fas fa-phone"></i> 08182-261414</p>
+                        <div class="card-tags">
+                            <span>Police</span>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Doddapete+Police+Station+Shimoga" class="btn-directions" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                    </div>
+                    
+                    <!-- Location Card 5: Women & Children Hospital -->
+                    <div class="location-card">
+                        <h3>Women & Children Hospital, Shimoga</h3>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> NH206, Vijayanagar, Shivamogga, Karnataka 577201</p>
+                        <p class="phone"><i class="fas fa-phone"></i> (Phone not public) </p>
+                        <div class="card-tags">
+                            <span>Hospital</span>
+                        </div>
+                        <a href="httpsRead Survivor Stories <i class="fas fa-arrow-right"></i></a>
+                        <a href="#resources" class="btn btn-secondary">Learn Self-Defense</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Placeholder for Resources Section -->
+            <section id="resources" style="padding: 4rem 0; background-color: #fff; border-radius: 12px;">
+                <h2>Resources & Education</h2>
+                <p>Self-defense tips, legal rights, and more.</p>
+                <!-- Content for resources would go here -->
+            </section>
+
+        </div>
+    </main>
+
+    <section class="stats-bar">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Emergency Support Available</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Anonymous & Confidential</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-infinity"></i>
+                <p>Strength in Community</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>SHE-SECURE</h3>
+                    <p>Empowering women with safety tools, support, and resources. You are not alone.</p>
+                </div>
+                <div class="footer-helplines">
+                    <h4>24/7 Emergency Helplines</h4>
+                    <ul>
+                        <li>Police <span>100</span></li>
+                        <li>Women Helpline <span>1091</span></li>
+                        <li>Ambulance <span>108</span></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="safelocations.html">Safe Locations</a></li>
+                        <li><a href="#support-chat">Support Chat</a></li>
+                        <li><a href="#survivor-stories">Survivor Stories</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Remember: You are strong, you are brave, and you deserve safety.</p>
+                <p>© 2024 SHE-SECURE. All rights reserved. Stay safe, stay strong.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- This modal ONLY exists on index.html -->
+    <div id="custom-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <p id="modal-message">This is a modal message!</p>
+            <button id="modal-close-btn">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
